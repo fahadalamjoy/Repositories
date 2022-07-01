@@ -16,7 +16,7 @@ export default function Login() {
         dispatch({ type: "hideLoading" });
         message.success("Login successfull");
         localStorage.setItem("pos-user", JSON.stringify(res.data));
-        navigate("/sales");
+        navigate("/");
       })
       .catch((error) => {
         dispatch({ type: "hideLoading" });
